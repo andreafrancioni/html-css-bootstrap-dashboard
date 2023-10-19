@@ -1,3 +1,5 @@
+
+/* HEADER SEARCH FORM */
 .form-group{
     width: 80%;
 }
@@ -18,3 +20,39 @@
     pointer-events: none;
     color: #797979;
 }
+
+/* SIDEBAR */
+
+#sidebar{
+    width: 10rem;
+    height: calc(100vh - 74px);
+    background-color: #051E34;
+    background-image: url(../img/sidebar-bg.png);
+}
+
+#side-content{
+    height: 100%;
+}
+
+#sidebar a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+/* CONTENT */
+#content{
+    width: calc(100% - 8rem);
+    overflow-y: auto;
+}
+
+/* TOP CONTENT */
+#top-content{
+    color: white;
+}
+
+
+
+/* COLORS */
+.bg-skyblue {background-color: #1B72E8;}
+.bg-blue {background-color: #165BBA;}
