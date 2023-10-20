@@ -47,16 +47,18 @@
                           </li>
 
                           <!-- Bell dropdown -->
-                          <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-bell" style="color: #FF8F00;"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                          <li class="nav-item">
+                            <div class="btn-group dropstart ">
+                              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <i class="fa-solid fa-bell" style="color: #FF8F00;"></i>
+                              </a>
+                              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                                <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                              </ul>
+                            </div>
                           </li>
                         </ul>
                       </div>
@@ -149,28 +151,262 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-2 d-flex">
                                 <span>Nuovo studente</span>
-                                <i class="fas fa-plus border rounded p-2"></i>
+                                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                  <i class="fas fa-plus border rounded p-2"></i>
+                                </a>
+                                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                  <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                  </div>
+                                  <div class="offcanvas-body">
+                                    <div>
+                                      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                                    </div>
+                                    <div class="dropdown mt-3">
+                                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                        Dropdown button
+                                      </button>
+                                      <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     
                     <!-- BOTTOM CONTENT -->
-                    <div id="bottom-content" class="container-fluid py-4">
+                    <div id="bottom-content" class="container-fluid py-3">
                         <div class="row">
+
+                          <!-- CLASS CARDS -->
                             <div class="col-8">
-                                <div class="card">
+                                <div class="card mt-2">
                                     <div class="card-header">
                                         <h3>Prossime classi</h3>
                                     </div>
                                     <div class="card-body">
-                                      
+                                      <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Nome</th>
+                                            <th scope="col">Data inizio</th>
+                                            <th scope="col">ROI</th>
+                                            <th scope="col">Stato</th>
+                                            <th scope="col">Azioni</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <!-- Start Row -->
+                                          <tr>
+                                            <td scope="row">
+                                              <img class="rounded-pill" src="./img/class-avatar.jpg" alt="class">
+                                              <span>Classe 75</span>
+                                            </td>
+                                            <td>15 Feb 2023</td>
+                                            <td>20%</td>
+                                            <td><span class="badge bg-success">Done</span></td>
+                                            <td>
+                                              <a href="#">
+                                                <i class="fas fa-pen border rounded p-2"></i>
+                                              </a>
+                                              <a href="#">
+                                                <i class="fa-solid fa-trash border rounded p-2"></i>
+                                              </a> 
+                                            </td>
+                                          </tr>
+
+                                          <!-- Start Row -->
+                                          <tr>
+                                            <td scope="row">
+                                              <img class="rounded-pill" src="./img/class-avatar.jpg" alt="class">
+                                              <span>Classe 76</span>
+                                            </td>
+                                            <td>16 Feb 2023</td>
+                                            <td>20%</td>
+                                            <td><span class="badge bg-success">Done</span></td>
+                                            <td>
+                                              <a href="#">
+                                                <i class="fas fa-pen border rounded p-2"></i>
+                                              </a>
+                                              <a href="#">
+                                                <i class="fa-solid fa-trash border rounded p-2"></i>
+                                              </a> 
+                                            </td>
+                                          </tr>
+
+                                          <!-- Start Row -->
+                                          <tr>
+                                            <td scope="row">
+                                              <img class="rounded-pill" src="./img/class-avatar.jpg" alt="class">
+                                              <span>Classe 77</span>
+                                            </td>
+                                            <td>17 Feb 2023</td>
+                                            <td>20%</td>
+                                            <td><span class="badge bg-warning">Process</span></td>
+                                            <td>
+                                              <a href="#">
+                                                <i class="fas fa-pen border rounded p-2"></i>
+                                              </a>
+                                              <a href="#">
+                                                <i class="fa-solid fa-trash border rounded p-2"></i>
+                                              </a> 
+                                            </td>
+                                          </tr>
+
+                                          <!-- Start Row -->
+                                          <tr>
+                                            <td scope="row">
+                                              <img class="rounded-pill" src="./img/class-avatar.jpg" alt="class">
+                                              <span>Classe 78</span>
+                                            </td>
+                                            <td>18 Feb 2023</td>
+                                            <td>20%</td>
+                                            <td><span class="badge bg-success">Done</span></td>
+                                            <td>
+                                              <a href="#">
+                                                <i class="fas fa-pen border rounded p-2"></i>
+                                              </a>
+                                              <a href="#">
+                                                <i class="fa-solid fa-trash border rounded p-2"></i>
+                                              </a> 
+                                            </td>
+                                          </tr>
+
+                                          <!-- Start Row -->
+                                          <tr>
+                                            <td scope="row">
+                                              <img class="rounded-pill" src="./img/class-avatar.jpg" alt="class">
+                                              <span>Classe 79</span>
+                                            </td>
+                                            <td>19 Feb 2023</td>
+                                            <td>20%</td>
+                                            <td><span class="badge bg-danger">Failed</span></td>
+                                            <td>
+                                              <a href="#">
+                                                <i class="fas fa-pen border rounded p-2"></i>
+                                              </a>
+                                              <a href="#">
+                                                <i class="fa-solid fa-trash border rounded p-2"></i>
+                                              </a> 
+                                            </td>
+                                          </tr>
+
+                                          <!-- Start Row -->
+                                          <tr>
+                                            <td scope="row">
+                                              <img class="rounded-pill" src="./img/class-avatar.jpg" alt="class">
+                                              <span>Classe 80</span>
+                                            </td>
+                                            <td>20 Feb 2023</td>
+                                            <td>20%</td>
+                                            <td><span class="badge bg-success">Done</span></td>
+                                            <td>
+                                              <a href="#">
+                                                <i class="fas fa-pen border rounded p-2"></i>
+                                              </a>
+                                              <a href="#">
+                                                <i class="fa-solid fa-trash border rounded p-2"></i>
+                                              </a> 
+                                            </td>
+                                          </tr>
+
+                                          <!-- Start Row -->
+                                          <tr>
+                                            <td scope="row">
+                                              <img class="rounded-pill" src="./img/class-avatar.jpg" alt="class">
+                                              <span>Classe 81</span>
+                                            </td>
+                                            <td>21 Feb 2023</td>
+                                            <td>20%</td>
+                                            <td><span class="badge bg-danger">Failed</span></td>
+                                            <td>
+                                              <a href="#">
+                                                <i class="fas fa-pen border rounded p-2"></i>
+                                              </a>
+                                              <a href="#">
+                                                <i class="fa-solid fa-trash border rounded p-2"></i>
+                                              </a> 
+                                            </td>
+                                          </tr>
+
+                                          <!-- Start Row -->
+                                          <tr>
+                                            <td scope="row">
+                                              <img class="rounded-pill" src="./img/class-avatar.jpg" alt="class">
+                                              <span>Classe 82</span>
+                                            </td>
+                                            <td>22 Feb 2023</td>
+                                            <td>20%</td>
+                                            <td><span class="badge bg-success">Done</span></td>
+                                            <td>
+                                              <a href="#">
+                                                <i class="fas fa-pen border rounded p-2"></i>
+                                              </a>
+                                              <a href="#">
+                                                <i class="fa-solid fa-trash border rounded p-2"></i>
+                                              </a> 
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+
+                                  <!-- FAQ CARD -->
+                                  <div class="card mt-2">
+                                    <div class="card-header">
+                                        <h3>F.A.Q.</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                  Come aggiungere un nuovo studente?
+                                                </button>
+                                              </h2>
+                                              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptas in cum, quis, dolore libero a, quibusdam repellendus perspiciatis possimus reiciendis. Accusamus ea sit doloremque! Tempore veritatis molestiae dignissimos vitae?
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                  Come posso accedere alle informaioni del mio account?
+                                                </button>
+                                              </h2>
+                                              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia iusto at nobis nesciunt quidem optio natus ipsa? Nisi qui, corrupti dolor ipsam eligendi quo ipsum, corporis eius cum aut atque.</div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                  Posso usare questa dashboard da mobile?
+                                                </button>
+                                              </h2>
+                                              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus unde a nam dignissimos consectetur saepe amet hic enim totam, sunt asperiores officiis maiores debitis, nulla voluptatum repudiandae natus cumque commodi!</div>
+                                              </div>
+                                            </div>
+                                          </div>
                                     </div>
                                   </div>
                             </div>
+
                             <div class="col-4">
-                                <div class="card">
+
+                              <!-- TODO 1 -->
+                                <div class="card mt-2">
                                     <div class="card-header">
                                       <h3>Todo</h3>
                                     </div>
@@ -206,50 +442,9 @@
                                           
                                     </div>
                                   </div>
-                            </div>
-                            <div class="col-8">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3>F.A.Q.</h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                                            <div class="accordion-item">
-                                              <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                                  Accordion Item #1
-                                                </button>
-                                              </h2>
-                                              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                                              </div>
-                                            </div>
-                                            <div class="accordion-item">
-                                              <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                                  Accordion Item #2
-                                                </button>
-                                              </h2>
-                                              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                                              </div>
-                                            </div>
-                                            <div class="accordion-item">
-                                              <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                                  Accordion Item #3
-                                                </button>
-                                              </h2>
-                                              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card">
+
+                                  <!-- TODO 2 -->
+                                  <div class="card mt-2">
                                     <div class="card-body">
                                         <div class="card">
                                             <ul class="list-group list-group-flush">
