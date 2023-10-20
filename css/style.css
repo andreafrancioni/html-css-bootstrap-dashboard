@@ -8,11 +8,17 @@
 /* HEADER */
 header{
     min-height: var(--header-height);
+    
+}
+
+header img{
+    max-height: 3rem;
+    
 }
 
 /* HEADER SEARCH FORM */
 .form-group{
-    width: 80%;
+    width: 100%;
 }
 
 .has-search .form-control {
