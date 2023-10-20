@@ -153,28 +153,79 @@
                             </div>
                             <div class="col-2 d-flex">
                                 <span>Nuovo studente</span>
+
+                                <!-- OFF CANVAS BUTTON -->
                                 <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                                   <i class="fas fa-plus border rounded p-2"></i>
                                 </a>
-                                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                                   <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                   </div>
+
+                                  <!-- OFF CANVAS BODY -->
                                   <div class="offcanvas-body">
-                                    <div>
-                                      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                                    </div>
-                                    <div class="dropdown mt-3">
-                                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                                        Dropdown button
-                                      </button>
-                                      <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                      </ul>
-                                    </div>
+                                      <div class="row">
+                                        <div class="col-6">
+                                          <label for="formGroupName" class="form-label">Nome</label>
+                                          <input type="text" class="form-control" id="formGroupName" placeholder="">
+                                        </div>
+                                        <div class="col-6">
+                                          <label for="formGroupCognome" class="form-label">Cognome</label>
+                                          <input type="text" class="form-control" id="formGroupCognome" placeholder="">
+                                        </div>
+                                        <div class="col-6">
+                                          <label for="formGroupCognome" class="form-label">Email</label>
+                                            <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                            <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                          <label for="formGroupCognome" class="form-label">Password</label>
+                                          <input type="password" class="form-control" id="formGroupCognome" placeholder="">
+                                        </div>
+                                        <div class="col-12">
+                                          <label for="formGroupCognome" class="form-label">Indirizzo</label>
+                                          <input type="text" class="form-control" id="formGroupCognome" placeholder="">
+                                        </div>
+                                        <div class="col-6">
+                                          <label for="formGroupCognome" class="form-label">Citta'</label>
+                                          <input type="text" class="form-control" id="formGroupCognome" placeholder="">
+                                        </div>
+                                        <div class="col-4">
+                                          <label for="formGroupCognome" class="form-label">Stato</label>
+                                          <select class="form-select" aria-label="Default select example">
+                                            <option selected>Scegli...</option>
+                                            <option value="1">Italia</option>
+                                            <option value="2">Spagna</option>
+                                            <option value="3">Svizzera</option>
+                                          </select>
+                                        </div>
+                                        <div class="col-2">
+                                          <label for="formGroupCognome" class="form-label">CAP</label>
+                                          <input type="text" class="form-control" id="formGroupCognome" placeholder="">
+                                        </div>
+                                        <div class="col-12">
+                                          <label for="formGroupCognome" class="form-label">Foto</label>
+                                          <div class="input-group">
+                                            <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                          </div>
+                                        </div>
+                                        <div class="col-12">
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                              Spunta per proseguire
+                                            </label>
+                                          </div>
+                                        </div>
+                                        <div class="col-12">
+                                          <button type="button" class="btn btn-primary">Salva</button>
+                                          <button type="button" class="btn btn-warning">Svuota</button>
+                                        </div>
+                                      </div>
                                   </div>
                                 </div>
                             </div>
