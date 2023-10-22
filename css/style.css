@@ -19,8 +19,8 @@ header img{
 
 ul{
     list-style-type: none;
-    gap: 3rem;
     margin-bottom: 0!important;
+    padding-left: 0!important;
 }
 
 /* HEADER SEARCH FORM */
@@ -91,6 +91,20 @@ table a{
 /* COLORS */
 .bg-skyblue {background-color: #1B72E8;}
 .bg-blue {background-color: #165BBA;}
+
+
+/* HOVER */
+#side-item:hover{
+    background-color: rgba(255, 255, 255, 0.527)
+}
+
+table tr:hover td{
+    background-color: rgba(83, 83, 83, 0.404);
+}
+
+table td a:hover > i{
+    transform: scale(1.2);
+}
 
 
 @media (min-width: 992px) {
